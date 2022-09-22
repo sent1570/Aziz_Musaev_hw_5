@@ -10,14 +10,11 @@ public class Main {
         System.out.println("Boss Health: " + c2.getHealth() + "  Boss Damage: " + c2.getDamage() + "  Boss defence: " + c2.getDefenceType());
         System.out.println();
 
-        for (int i = 0; i < creatHeroes().length ; i++) {
-
-            if (i == 1){
+        for (int i = 0; i < creatHeroes().length; i++) {
+            if (creatHeroes()[i].getSuperPower() == null) {
                 System.out.println("Health: " + creatHeroes()[i].getHeroHealth() + " Damage: " + creatHeroes()[i].getHeroDamage());
 
-             }
-else {
-
+            } else {
                 System.out.println("Health: " + creatHeroes()[i].getHeroHealth() + " Damage: " + creatHeroes()[i].getHeroDamage() + " SuperPower: " + creatHeroes()[i].getSuperPower());
             }
 
